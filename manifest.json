@@ -9,12 +9,12 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
-        "version": "2.0.2.0",
-        "changelog": "Bundled the XDKNet web app (served at /XDKNet/Web/) alongside the server plugin.",
+        "version": "2.0.2.1",
+        "changelog": "Bundled the XDKNet web app (served at /XDKNet/Web/). Fixes the 'web root not found' error from the earlier server-only build.",
         "targetAbi": "10.10.0.0",
-        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.0.zip",
-        "checksum": "0E5648016BA68E9C4EB1C3189EBFBD81",
-        "timestamp": "2026-08-03T20:47:41Z"
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.1.zip",
+        "checksum": "948DB17DFF898DDA837F8EF49F5EABE4",
+        "timestamp": "2026-08-03T21:10:00Z"
       }
     ]
   }
