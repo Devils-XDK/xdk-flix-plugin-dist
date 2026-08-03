@@ -1,0 +1,21 @@
+[
+  {
+    "guid": "aff92a34-1569-43c5-b9db-194c44ff52a4",
+    "name": "XDKNet",
+    "description": "XDKNet brings a modern TV-style UI to Jellyfin web, with a custom navbar, a featured media bar, Seerr integration, and cross-device settings synchronization.",
+    "overview": "Custom UI and settings sync for Jellyfin",
+    "owner": "Devils-XDK",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
+    "versions": [
+      {
+        "version": "2.0.2.0",
+        "changelog": "Initial XDKNet build (2.0.2.0).",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.0.zip",
+        "checksum": "15E176330BB0FE76BF71FF04CA629963",
+        "timestamp": "2026-08-03T20:22:49Z"
+      }
+    ]
+  }
+]
