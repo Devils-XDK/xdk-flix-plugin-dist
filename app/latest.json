@@ -1,0 +1,11 @@
+{
+  "tag_name": "v2.3.3",
+  "name": "XDKNet 2.3.3",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/blob/main/app/xdknet-tv.apk",
+  "assets": [
+    {
+      "name": "XDKNet_AndroidTV_v2.3.3.apk",
+      "browser_download_url": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/app/xdknet-tv.apk"
+    }
+  ]
+}
