@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.3.7",
+        "changelog": "Profile pictures can now come from your own server. Characters lists an avatar set stored by the plugin itself, People and Posters pull actor headshots and artwork straight from your library, and the generated faces are still there with the abstract patterns dropped. Admins can import an existing avatar set into the plugin so it no longer depends on another plugin staying installed.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.3.7.zip",
+        "checksum": "9097334421B859074420861B35200101",
+        "timestamp": "2026-08-04T23:41:57Z"
+      },
+      {
         "version": "2.0.3.6",
         "changelog": "Profile pictures. Pick an avatar from a generated grid or upload a photo, and it becomes your real Jellyfin profile image, so it shows in the XDKNet web app, on Android TV, in Jellyfin's own web UI and in every other client. Reachable from Account & Security, from settings search, and by selecting your own card in the account switcher. Fully navigable with a TV remote. The server renders the picture so the flow is identical on a TV, and admins can switch generation off in the plugin settings.",
         "targetAbi": "10.10.0.0",
