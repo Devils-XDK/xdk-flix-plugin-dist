@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.2.2",
+        "changelog": "Fix plugin config tabs not switching on the mobile Jellyfin dashboard (config page now self-initializes).",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.2.zip",
+        "checksum": "99FA3D05E4B641848DF0417F79A0F177",
+        "timestamp": "2026-08-04T01:10:32Z"
+      },
+      {
         "version": "2.0.2.1",
         "changelog": "Bundled the XDKNet web app (served at /XDKNet/Web/). Fixes the 'web root not found' error from the earlier server-only build.",
         "targetAbi": "10.10.0.0",
