@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.3.4",
+        "changelog": "Fixes the watch-history import failing with 'no users found' on Jellyfin 10.11, where the user list API changed from properties to methods. The map now has zoom controls, a fit-to-viewers button, and selectable basemaps (Slate, Midnight, Light, Streets, Terrain).",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.3.4.zip",
+        "checksum": "909613DF863AFF038BE711C69F00FCA3",
+        "timestamp": "2026-08-04T20:00:23Z"
+      },
+      {
         "version": "2.0.3.3",
         "changelog": "Fixes 'no users found' when importing watch history (the user list is now read correctly on every server version), and the import runs in the background so a large library cannot time it out. Viewer Locations is now a real map. Adds Reclaim Space (biggest titles nobody has played) and Year in Review.",
         "targetAbi": "10.10.0.0",
