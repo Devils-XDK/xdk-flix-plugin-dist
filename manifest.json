@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.3.1",
+        "changelog": "Import your existing watch history: rebuilds statistics from the play counts Jellyfin has tracked all along, so charts and top-lists cover the life of the server. Adds an opt-in Viewer Locations map showing where remote streams come from, with alerts when one account streams from two places at once. Local network addresses are never sent anywhere.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.3.1.zip",
+        "checksum": "8984C845BAFACA9BECA7E92B43596DD3",
+        "timestamp": "2026-08-04T18:34:53Z"
+      },
+      {
         "version": "2.0.3.0",
         "changelog": "Fixes the library health scan failing on Jellyfin 10.11 (BaseItem.GetMediaStreams was removed). Now Streaming shows the real bitrate for direct-play streams plus elapsed/total time and how long is left. Admin sidebar restyled to match the dashboard.",
         "targetAbi": "10.10.0.0",
