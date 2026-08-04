@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.2.8",
+        "changelog": "Fixes plugin updates not taking effect: the web app no longer registers a service worker (which was caching the old build and surviving browser cache clears) and unregisters any stale one on load. Also restores the admin dashboard's card borders and elevation on Apple devices.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.8.zip",
+        "checksum": "9A54816B5245BDB025E85C767BB9D888",
+        "timestamp": "2026-08-04T16:41:55Z"
+      },
+      {
         "version": "2.0.2.7",
         "changelog": "Admin dashboard now renders the XDKNet design on every theme (bordered, elevated cards; iOS-style KPI tiles with usage ring), and the web app is served no-cache so future plugin updates take effect without clearing your browser.",
         "targetAbi": "10.10.0.0",
