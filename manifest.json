@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.3.5",
+        "changelog": "The button that opens the XDKNet web view from Jellyfin's header now shows the XDKNet logo instead of the old Moonfin one.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.3.5.zip",
+        "checksum": "D576077B589DD4ED10B45580EC9D752D",
+        "timestamp": "2026-08-04T20:13:19Z"
+      },
+      {
         "version": "2.0.3.4",
         "changelog": "Fixes the watch-history import failing with 'no users found' on Jellyfin 10.11, where the user list API changed from properties to methods. The map now has zoom controls, a fit-to-viewers button, and selectable basemaps (Slate, Midnight, Light, Streets, Terrain).",
         "targetAbi": "10.10.0.0",
