@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.2.7",
+        "changelog": "Admin dashboard now renders the XDKNet design on every theme (bordered, elevated cards; iOS-style KPI tiles with usage ring), and the web app is served no-cache so future plugin updates take effect without clearing your browser.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.7.zip",
+        "checksum": "34E0BD75A7C32360DCCAB2C4F0B81C9A",
+        "timestamp": "2026-08-04T16:04:56Z"
+      },
+      {
         "version": "2.0.2.6",
         "changelog": "Branding fix: XDKNet login/startup logo replaces the old Moonfin wordmark, and the leftover \"Moonbase\" plugin name is renamed to \"XDKNet\" throughout the UI.",
         "targetAbi": "10.10.0.0",
