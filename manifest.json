@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.3.0",
+        "changelog": "Fixes the library health scan failing on Jellyfin 10.11 (BaseItem.GetMediaStreams was removed). Now Streaming shows the real bitrate for direct-play streams plus elapsed/total time and how long is left. Admin sidebar restyled to match the dashboard.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.3.0.zip",
+        "checksum": "E55443D1CA5DB337F720686D913775EA",
+        "timestamp": "2026-08-04T17:28:31Z"
+      },
+      {
         "version": "2.0.2.9",
         "changelog": "Fixes the redesigned dashboard not appearing after an update. Flutter's main.dart.wasm/main.dart.js keep the same filename in every build and were served without cache headers, so browsers and proxies kept running the old app code. Every web asset now revalidates (304s keep it fast).",
         "targetAbi": "10.10.0.0",
