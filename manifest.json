@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.2.3",
+        "changelog": "Config tabs switch via a delegated capture-phase handler so they work on the iOS/mobile Jellyfin dashboard.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.3.zip",
+        "checksum": "40BC16D5E7C9D972D9AE9D10CDA4E68F",
+        "timestamp": "2026-08-04T01:38:22Z"
+      },
+      {
         "version": "2.0.2.2",
         "changelog": "Fix plugin config tabs not switching on the mobile Jellyfin dashboard (config page now self-initializes).",
         "targetAbi": "10.10.0.0",
