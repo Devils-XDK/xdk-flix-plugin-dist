@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.2.6",
+        "changelog": "Branding fix: XDKNet login/startup logo replaces the old Moonfin wordmark, and the leftover \"Moonbase\" plugin name is renamed to \"XDKNet\" throughout the UI.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.6.zip",
+        "checksum": "E4862A3B9F17C246720856BC28781161",
+        "timestamp": "2026-08-04T14:59:43Z"
+      },
+      {
         "version": "2.0.2.5",
         "changelog": "Redesigned iOS-style server admin dashboard: live Now Streaming with terminate/message controls, play-history + top-users + bandwidth analytics, searchable watch history, notification routing (Discord/Telegram/ntfy), and library-health checks.",
         "targetAbi": "10.10.0.0",
