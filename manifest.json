@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.3.3",
+        "changelog": "Fixes 'no users found' when importing watch history (the user list is now read correctly on every server version), and the import runs in the background so a large library cannot time it out. Viewer Locations is now a real map. Adds Reclaim Space (biggest titles nobody has played) and Year in Review.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.3.3.zip",
+        "checksum": "AE75772933F09702B01979217E5D1FC0",
+        "timestamp": "2026-08-04T19:21:45Z"
+      },
+      {
         "version": "2.0.3.1",
         "changelog": "Import your existing watch history: rebuilds statistics from the play counts Jellyfin has tracked all along, so charts and top-lists cover the life of the server. Adds an opt-in Viewer Locations map showing where remote streams come from, with alerts when one account streams from two places at once. Local network addresses are never sent anywhere.",
         "targetAbi": "10.10.0.0",
