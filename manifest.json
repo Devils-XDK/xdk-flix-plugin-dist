@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.3.6",
+        "changelog": "Profile pictures. Pick an avatar from a generated grid or upload a photo, and it becomes your real Jellyfin profile image, so it shows in the XDKNet web app, on Android TV, in Jellyfin's own web UI and in every other client. Reachable from Account & Security, from settings search, and by selecting your own card in the account switcher. Fully navigable with a TV remote. The server renders the picture so the flow is identical on a TV, and admins can switch generation off in the plugin settings.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.3.6.zip",
+        "checksum": "16983082F9A9C3A36B677F2A1E2F6A59",
+        "timestamp": "2026-08-04T22:05:40Z"
+      },
+      {
         "version": "2.0.3.5",
         "changelog": "The button that opens the XDKNet web view from Jellyfin's header now shows the XDKNet logo instead of the old Moonfin one.",
         "targetAbi": "10.10.0.0",
