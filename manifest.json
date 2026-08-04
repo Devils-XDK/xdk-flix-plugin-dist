@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.2.9",
+        "changelog": "Fixes the redesigned dashboard not appearing after an update. Flutter's main.dart.wasm/main.dart.js keep the same filename in every build and were served without cache headers, so browsers and proxies kept running the old app code. Every web asset now revalidates (304s keep it fast).",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.9.zip",
+        "checksum": "90E2C906E2D85884D38C17AD8B1877A0",
+        "timestamp": "2026-08-04T17:02:37Z"
+      },
+      {
         "version": "2.0.2.8",
         "changelog": "Fixes plugin updates not taking effect: the web app no longer registers a service worker (which was caching the old build and surviving browser cache clears) and unregisters any stale one on load. Also restores the admin dashboard's card borders and elevation on Apple devices.",
         "targetAbi": "10.10.0.0",
