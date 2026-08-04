@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.2.4",
+        "changelog": "Config page loads its script as an external file so it runs under strict Content-Security-Policy - fixes dead tabs (Seerr, Games, etc.) in some browsers/proxies.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.4.zip",
+        "checksum": "4D4973169511A5A0F75AE71EA0F6395E",
+        "timestamp": "2026-08-04T11:08:10Z"
+      },
+      {
         "version": "2.0.2.3",
         "changelog": "Config tabs switch via a delegated capture-phase handler so they work on the iOS/mobile Jellyfin dashboard.",
         "targetAbi": "10.10.0.0",
