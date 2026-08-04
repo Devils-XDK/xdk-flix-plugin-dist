@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.2.5",
+        "changelog": "Redesigned iOS-style server admin dashboard: live Now Streaming with terminate/message controls, play-history + top-users + bandwidth analytics, searchable watch history, notification routing (Discord/Telegram/ntfy), and library-health checks.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.2.5.zip",
+        "checksum": "DB31977A2DD5605769AA14DABFF98DE2",
+        "timestamp": "2026-08-04T14:36:50Z"
+      },
+      {
         "version": "2.0.2.4",
         "changelog": "Config page loads its script as an external file so it runs under strict Content-Security-Policy - fixes dead tabs (Seerr, Games, etc.) in some browsers/proxies.",
         "targetAbi": "10.10.0.0",
