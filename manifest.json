@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.4.0",
+        "changelog": "Fixes empty user dropdowns on Jellyfin 10.11, where the user list moved and the dashboard could no longer read it. The plugin now supplies the list itself.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.4.0.zip",
+        "checksum": "FF47DABF8B49B0C83BACD7143541DFE8",
+        "timestamp": "2026-08-05T19:51:41Z"
+      },
+      {
         "version": "2.0.3.9",
         "changelog": "Fixes the empty user dropdowns on the plugin settings page, which also stopped the existing apply-to-a-single-user list from loading.",
         "targetAbi": "10.10.0.0",
