@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.3.8",
+        "changelog": "Admin tools for setting users up without touching their TV. Import your own settings into the user defaults instead of retyping them, push those defaults to one user, copy one user's setup onto another, and sign a user in to Seerr from the dashboard. A table shows who is set up. Seerr keys are never copied between accounts, so nobody requests through someone else's. The character avatar set can also be imported into the plugin from the settings page now.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.3.8.zip",
+        "checksum": "DBBD9E0C71818CF2BA67450CECE3F840",
+        "timestamp": "2026-08-05T18:43:11Z"
+      },
+      {
         "version": "2.0.3.7",
         "changelog": "Profile pictures can now come from your own server. Characters lists an avatar set stored by the plugin itself, People and Posters pull actor headshots and artwork straight from your library, and the generated faces are still there with the abstract patterns dropped. Admins can import an existing avatar set into the plugin so it no longer depends on another plugin staying installed.",
         "targetAbi": "10.10.0.0",
