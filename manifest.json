@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.3.9",
+        "changelog": "Fixes the empty user dropdowns on the plugin settings page, which also stopped the existing apply-to-a-single-user list from loading.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.3.9.zip",
+        "checksum": "5764BBDDB0BC95098CAF52663FDA19AA",
+        "timestamp": "2026-08-05T19:38:08Z"
+      },
+      {
         "version": "2.0.3.8",
         "changelog": "Admin tools for setting users up without touching their TV. Import your own settings into the user defaults instead of retyping them, push those defaults to one user, copy one user's setup onto another, and sign a user in to Seerr from the dashboard. A table shows who is set up. Seerr keys are never copied between accounts, so nobody requests through someone else's. The character avatar set can also be imported into the plugin from the settings page now.",
         "targetAbi": "10.10.0.0",
