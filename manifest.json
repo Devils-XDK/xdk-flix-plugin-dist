@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.5.0",
+        "changelog": "Adds a Storage tab to the plugin settings page: what every library, resolution and title is costing on disk, free space per drive, charts, and the ability to delete oversized or never-watched media - files and all - straight from the page.",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.5.0.zip",
+        "checksum": "3BCC513F3FA2B0CFE50A3B60988B24BE",
+        "timestamp": "2026-08-17T13:34:19Z"
+      },
+      {
         "version": "2.0.4.1",
         "changelog": "Adds an XDKNet log, viewable under Help on the plugin settings page. The settings page records its own failures there, so problems like the empty user dropdowns can be diagnosed from the server.",
         "targetAbi": "10.10.0.0",
