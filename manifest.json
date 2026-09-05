@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.6.0",
+        "changelog": "Automated build from Devils-XDK/xdk-flix-plugin@d7e71c8680266c8d4769e03ae7965ac2aaac06d8",
+        "targetAbi": "10.10.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.6.0.zip",
+        "checksum": "B62DA3EE7D49E7B8C4228557E2CF46F1",
+        "timestamp": "2026-09-05T21:50:12Z"
+      },
+      {
         "version": "2.0.5.0",
         "changelog": "Adds a Storage tab to the plugin settings page: what every library, resolution and title is costing on disk, free space per drive, charts, and the ability to delete oversized or never-watched media - files and all - straight from the page.",
         "targetAbi": "10.10.0.0",
