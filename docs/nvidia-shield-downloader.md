@@ -25,6 +25,11 @@ one once:
 **Actions → Publish Stable APK Alias → Run workflow** (leave the tag blank to
 use the latest release).
 
+The landing page at `/tv/` is separate and optional - the Downloader flow does
+not need it. It requires Pages to be switched on once by hand, under
+**Settings → Pages → Build and deployment → Source → GitHub Actions**, because
+the Actions token is not allowed to create a Pages site itself.
+
 It downloads the APK that release already carries and re-uploads the identical
 bytes as `XDKNet_AndroidTV.apk`, leaving the versioned asset in place. After
 that it runs automatically on every published release, so this is a one-time

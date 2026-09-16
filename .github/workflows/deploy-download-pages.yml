@@ -31,7 +31,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      # Only tv/ is needed, and a blobless sparse checkout skips the ~600 MB of
+      # plugin zips in releases/ that a full clone would otherwise pull down to
+      # publish a 4 KB page.
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tv
 
       - name: Stage the landing page
         run: |
@@ -49,11 +54,12 @@ jobs:
           du -sh site
           find site -type f | sort
 
+      # No enablement: true here. Creating a Pages site needs admin rights that
+      # the Actions token does not have, so it fails with "Resource not
+      # accessible by integration" rather than turning Pages on. Pages has to be
+      # switched to the GitHub Actions source once by hand, under
+      # Settings -> Pages -> Build and deployment -> Source.
       - uses: actions/configure-pages@v5
-        with:
-          # Flips Pages on the first time this runs so the repo does not need a
-          # manual settings change; a no-op afterwards.
-          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
