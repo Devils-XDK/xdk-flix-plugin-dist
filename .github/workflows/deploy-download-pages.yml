@@ -1,0 +1,63 @@
+name: Deploy Download Pages
+
+# Serves the TV landing page over GitHub Pages. Without this it sits in the
+# repo reachable only through raw.githubusercontent.com, which serves HTML as
+# text/plain - so the page never renders and its redirect never fires.
+#
+# Only tv/ is published. The APK is served from Releases, and releases/ holds
+# tens of ~63 MB plugin zips against a 1 GB Pages cap, so uploading the repo
+# would fail the deploy outright.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'tv/**'
+      - '.github/workflows/deploy-download-pages.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stage the landing page
+        run: |
+          set -euo pipefail
+          mkdir -p site
+          cp -r tv site/tv
+
+          # Land anyone who hits the site root on the download page.
+          cp tv/index.html site/index.html
+
+          # Pages runs Jekyll by default, which drops files it considers
+          # special and can mangle what it serves.
+          touch site/.nojekyll
+
+          du -sh site
+          find site -type f | sort
+
+      - uses: actions/configure-pages@v5
+        with:
+          # Flips Pages on the first time this runs so the repo does not need a
+          # manual settings change; a no-op afterwards.
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

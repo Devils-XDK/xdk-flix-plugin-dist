@@ -4,23 +4,84 @@
 <meta charset="utf-8">
 <title>XDKNet for Android TV</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- Sends a TV browser or a sideload downloader straight at the APK. The
-     redirect is in a meta tag first so it still works where script does not,
-     which on a TV box is more often than you would think. -->
-<meta http-equiv="refresh" content="0; url=https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/app/xdknet-tv.apk">
+<meta name="robots" content="noindex">
+
+<!-- The human-facing half of the sideload flow: open this in a TV browser or
+     share it. The Downloader *code* should point straight at the .apk below
+     instead, so Downloader receives binary bytes and a filename ending in
+     .apk rather than a page it has to render first.
+
+     Everything points at the fixed-name release asset, never at a versioned
+     one, so this file never needs editing when a new build ships.
+
+     The redirect is a meta tag rather than script because Downloader's built-in
+     browser is a stripped-down WebView and script is not a safe bet. Three
+     seconds is long enough to read and to cancel with Back, short enough that
+     nobody has to press anything. -->
+<meta http-equiv="refresh" content="3; url=https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/latest/download/XDKNet_AndroidTV.apk">
+
 <style>
-  body { background:#0d1117; color:#e6edf3; font-family:system-ui,sans-serif;
-         display:grid; place-items:center; min-height:100vh; margin:0; text-align:center; }
-  a { color:#58a6ff; word-break:break-all; }
-  .box { padding:2rem; max-width:40rem; }
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    background: #0d1117; color: #e6edf3; margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: grid; place-items: center; min-height: 100vh;
+    /* TVs overscan-crop the edges, so keep everything off the border. */
+    padding: 5vh 5vw; text-align: center;
+  }
+  .box { max-width: 46rem; }
+  h1 { font-size: clamp(1.8rem, 4vw, 3rem); margin: 0 0 .5rem; }
+  .sub { color: #8b949e; font-size: clamp(1rem, 1.6vw, 1.25rem); margin: 0 0 2rem; }
+  /* Sized for a ten-foot read and for a D-pad to land on. */
+  .cta {
+    display: inline-block; padding: 1rem 2.5rem; border-radius: .75rem;
+    background: #238636; color: #fff; text-decoration: none; font-weight: 600;
+    font-size: clamp(1.1rem, 2vw, 1.5rem); border: 3px solid transparent;
+  }
+  .cta:focus, .cta:hover { border-color: #e6edf3; outline: none; background: #2ea043; }
+  .links { margin-top: 2.5rem; font-size: clamp(.9rem, 1.3vw, 1.05rem); }
+  .links a { color: #58a6ff; }
+  .links a:focus { outline: 3px solid #e6edf3; outline-offset: 3px; }
+  code { background: #161b22; padding: .15rem .45rem; border-radius: .3rem; word-break: break-all; }
+  .meta { color: #8b949e; margin-top: 1.25rem; font-size: clamp(.85rem, 1.2vw, 1rem); }
 </style>
 </head>
 <body>
   <div class="box">
     <h1>XDKNet for Android TV</h1>
-    <p>The download should start on its own.</p>
-    <p><a href="https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/app/xdknet-tv.apk">Download the APK</a></p>
-    <p><a href="https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases">All releases</a></p>
+    <p class="sub">The download starts on its own. If it does not, press OK on the button.</p>
+
+    <a class="cta"
+       href="https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/latest/download/XDKNet_AndroidTV.apk"
+       autofocus>Download the APK</a>
+
+    <p class="meta">
+      <span id="version">Latest build</span> &middot; <code>org.xdknet.androidtv</code><br>
+      Android 7.0 or newer &middot; arm64, arm32 and x86_64 in one file
+    </p>
+
+    <p class="links">
+      In Downloader, type this URL if you do not have the code:<br>
+      <code>github.com/Devils-XDK/xdk-flix-plugin-dist/releases/latest/download/XDKNet_AndroidTV.apk</code>
+    </p>
+
+    <p class="links">
+      <a href="https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases">All releases</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://github.com/Devils-XDK/XDK-Flix">Project</a>
+    </p>
   </div>
+
+<script>
+  // Progressive enhancement only - the page is complete without it. Reads the
+  // current release name so the page never has to be edited on release.
+  fetch('https://api.github.com/repos/Devils-XDK/xdk-flix-plugin-dist/releases/latest')
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) {
+      if (j && j.name) { document.getElementById('version').textContent = j.name; }
+    })
+    .catch(function () { /* keep the static label */ });
+</script>
 </body>
 </html>

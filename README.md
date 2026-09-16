@@ -28,6 +28,19 @@ extract it into your Jellyfin `plugins/XDKNet/` folder, then restart Jellyfin.
 The Emby build (`XDKNet.Emby-x.x.x.x.zip`) is attached to the same releases as a
 drop-in zip — extract its contents into your Emby `plugins/` folder.
 
+## Android TV / Nvidia Shield
+
+The Android TV build is distributed from this repo's
+[Releases](https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases) as well.
+Permanent download URL, safe to point a Downloader code or a QR code at:
+
+```
+https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/latest/download/XDKNet_AndroidTV.apk
+```
+
+Sideloading onto an Nvidia Shield with the Downloader app is written up in
+[docs/nvidia-shield-downloader.md](docs/nvidia-shield-downloader.md).
+
 ---
 
 Releases here are produced automatically; this repo holds distribution

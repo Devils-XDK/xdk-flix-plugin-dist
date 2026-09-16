@@ -1,0 +1,85 @@
+name: Publish Stable APK Alias
+
+# Every release names its APK with the version baked in
+# (XDKNet_AndroidTV_v2.3.5.apk), so the /releases/latest/download/ URL for it
+# breaks the moment the next version ships. That is fatal for a Downloader
+# code: the code is minted once and then printed, shared and forgotten, so the
+# URL behind it has to outlive every release.
+#
+# This attaches a second copy of the SAME artifact under a fixed name, giving
+# one permanent address:
+#
+#   https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/latest/download/XDKNet_AndroidTV.apk
+#
+# It rebuilds nothing - it copies the asset the release already carries.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to alias (defaults to the latest release)
+        required: false
+
+permissions:
+  contents: write
+
+env:
+  ALIAS_NAME: XDKNet_AndroidTV.apk
+
+jobs:
+  alias:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Attach the fixed-name copy
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          EVENT_TAG: ${{ github.event.release.tag_name }}
+          INPUT_TAG: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+
+          tag="${EVENT_TAG:-${INPUT_TAG:-}}"
+          if [ -z "$tag" ]; then
+            tag=$(gh release view --repo "$REPO" --json tagName -q .tagName)
+          fi
+          echo "Aliasing release $tag"
+
+          # Pull the versioned APK this release already has.
+          mkdir -p dl
+          # Let the explicit check below report a missing asset, rather than
+          # dying on gh's own error under set -e.
+          gh release download "$tag" --repo "$REPO" --pattern 'XDKNet_AndroidTV_v*.apk' --dir dl || true
+
+          src=$(find dl -name '*.apk' -type f | head -1)
+          if [ -z "$src" ]; then
+            echo "::error::no XDKNet_AndroidTV_v*.apk asset on $tag"
+            exit 1
+          fi
+          echo "Source asset: $src ($(stat -c%s "$src") bytes)"
+
+          # Same bytes, fixed name. Copy rather than rename so the versioned
+          # asset people already link to stays exactly where it is.
+          cp "$src" "$ALIAS_NAME"
+          if ! cmp -s "$src" "$ALIAS_NAME"; then
+            echo "::error::copy did not match the source asset"
+            exit 1
+          fi
+
+          gh release upload "$tag" "$ALIAS_NAME" --repo "$REPO" --clobber
+
+      - name: Confirm the permanent URL resolves
+        env:
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          url="https://github.com/$REPO/releases/latest/download/$ALIAS_NAME"
+
+          # The alias only lands on /latest/ for a full release; a prerelease
+          # keeps its asset but /latest/ still points at the last stable one.
+          code=$(curl -sS -o /dev/null -w '%{http_code}' -L -r 0-0 "$url" || true)
+          echo "$url -> HTTP $code"
+          if [ "$code" != "200" ] && [ "$code" != "206" ]; then
+            echo "::warning::$url is not resolving yet (HTTP $code). Expected for a prerelease; otherwise re-check."
+          fi
