@@ -16,6 +16,24 @@ AFTVnews** (`com.esaba.downloader`).
 
 4. Let it download, then choose **Install**.
 
+## First-time setup
+
+The permanent URL needs the fixed-name asset to exist. Releases published
+before this was added only carry the versioned name, so backfill the current
+one once:
+
+**Actions → Publish Stable APK Alias → Run workflow** (leave the tag blank to
+use the latest release).
+
+It downloads the APK that release already carries and re-uploads the identical
+bytes as `XDKNet_AndroidTV.apk`, leaving the versioned asset in place. After
+that it runs automatically on every published release, so this is a one-time
+step. Confirm before minting anything:
+
+```bash
+./scripts/check-downloader-url.sh     # expect RESULT: PASS
+```
+
 ## Getting the numeric code
 
 A "Downloader code" is not something this repo can generate. The codes are

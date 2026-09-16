@@ -46,18 +46,38 @@ jobs:
           fi
           echo "Aliasing release $tag"
 
-          # Pull the versioned APK this release already has.
-          mkdir -p dl
-          # Let the explicit check below report a missing asset, rather than
-          # dying on gh's own error under set -e.
-          gh release download "$tag" --repo "$REPO" --pattern 'XDKNet_AndroidTV_v*.apk' --dir dl || true
+          assets=$(gh release view "$tag" --repo "$REPO" --json assets -q '.assets[].name')
+          echo "Assets on $tag:"; echo "$assets" | sed 's/^/  /'
 
-          src=$(find dl -name '*.apk' -type f | head -1)
-          if [ -z "$src" ]; then
-            echo "::error::no XDKNet_AndroidTV_v*.apk asset on $tag"
+          # Already aliased (a re-run, or a release published with the fixed
+          # name directly) - nothing to do.
+          if grep -qx "$ALIAS_NAME" <<<"$assets"; then
+            echo "$ALIAS_NAME is already attached to $tag; nothing to do."
+            exit 0
+          fi
+
+          # Prefer the versioned name the build pipeline produces, but fall
+          # back to any other APK so a one-off naming change does not silently
+          # leave the permanent URL dead.
+          src_name=$(grep -m1 -E '^XDKNet_AndroidTV_v.*\.apk$' <<<"$assets" || true)
+          if [ -z "$src_name" ]; then
+            src_name=$(grep -m1 -E '\.apk$' <<<"$assets" || true)
+          fi
+          if [ -z "$src_name" ]; then
+            echo "::error::$tag has no .apk asset to alias"
             exit 1
           fi
-          echo "Source asset: $src ($(stat -c%s "$src") bytes)"
+          echo "Source asset: $src_name"
+
+          mkdir -p dl
+          gh release download "$tag" --repo "$REPO" --pattern "$src_name" --dir dl
+
+          src="dl/$src_name"
+          if [ ! -s "$src" ]; then
+            echo "::error::failed to download $src_name from $tag"
+            exit 1
+          fi
+          echo "Downloaded $(stat -c%s "$src") bytes"
 
           # Same bytes, fixed name. Copy rather than rename so the versioned
           # asset people already link to stays exactly where it is.
