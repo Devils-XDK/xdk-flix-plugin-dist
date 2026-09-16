@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.7.3",
+        "changelog": "Automated build from Devils-XDK/xdk-flix-plugin@1817d5e86441b25f9075d02f2a8c7d61b834decc",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.7.3.zip",
+        "checksum": "5EF4C1514C95322438DD9D1EC018FF88",
+        "timestamp": "2026-09-16T19:18:53Z"
+      },
+      {
         "version": "2.0.7.2",
         "changelog": "Automated build from Devils-XDK/xdk-flix-plugin@5f2b64aeadd1b4795ddfe88913f03b894a4c47e0",
         "targetAbi": "12.0.0.0",
