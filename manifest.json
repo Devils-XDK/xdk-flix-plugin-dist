@@ -10,7 +10,7 @@
     "versions": [
       {
         "version": "2.0.8.1",
-        "changelog": "Automated build from Devils-XDK/xdk-flix-plugin@b2f8cf17d4e81d901794132df8f7794e6386c1cb",
+        "changelog": "Fixes server messages, which did not work in 2.0.8.0. Every message written on the Messages tab was stored blank -- no title, no body, its audience reset to everyone and its selected users dropped, so a message addressed to one person reached nobody -- and no message could be deleted, edited or reordered, because its row carried no id for those buttons to act on. One cause behind both: the message model shipped under PascalCase names while the settings page reads and writes camelCase, and Jellyfin's serializer neither renames nor matches case-insensitively, so nothing bound in either direction and nothing threw. A message saved blank by 2.0.8.0 cannot be recovered, as it was never stored, but it can now be deleted. The web bundle also fixes messages set to \"opens on its own\", which never opened: the server sent which one it should be and the app never acted on it.",
         "targetAbi": "12.0.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.8.1.zip",
         "checksum": "217F56FB67402F022EE58DE474C26C20",
