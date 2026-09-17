@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.8.5",
+        "changelog": "Automated build from Devils-XDK/xdk-flix-plugin@00248966047691f80a0541f4ffd97e64c500e8cb",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.8.5.zip",
+        "checksum": "BCC8A6CAEAF277AA5263A8D2D84E5F16",
+        "timestamp": "2026-09-17T14:51:30Z"
+      },
+      {
         "version": "2.0.8.4",
         "changelog": "Fixes fullscreen in the web app on an iPhone, including inside the Jellyfin iOS app, which runs this page in a WKWebView. An iPhone does not implement the standard Fullscreen API at all, and the button added in 2.0.8.3 called exactly that -- so it did nothing there, and then flipped to \"exit fullscreen\" over a video that had never entered it, because the state was taken from what was asked for rather than what happened. It now falls back to sending the video element fullscreen, which is the one thing an iPhone does support, and the button reflects the real state. Note that iOS hands a fullscreen video to Apple's own player, so the subtitle and audio menus are not reachable until you leave fullscreen; that is the platform rather than a choice. Forced landscape is still unavailable on iOS, which has no Screen Orientation lock.",
         "targetAbi": "12.0.0.0",
