@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "2.0.8.1",
+        "changelog": "Automated build from Devils-XDK/xdk-flix-plugin@b2f8cf17d4e81d901794132df8f7794e6386c1cb",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.8.1.zip",
+        "checksum": "217F56FB67402F022EE58DE474C26C20",
+        "timestamp": "2026-09-17T00:33:07Z"
+      },
+      {
         "version": "2.0.8.0",
         "changelog": "Server messages: post a message that waits behind an unread count or opens once by itself, stored and kept per user with its own read state, instead of a broadcast shouted once that anyone offline missed. Adds personal ratings, bookmarks, and download progress tracked per device rather than shared across them; TV series finally get their network logos -- HBO, AMC and the rest were never fetched -- and the IMDb charts no longer refuse to load. Two fixes worth updating for on their own: a single pasted control character in any setting could wipe the plugin's entire configuration on save, and the blur defaults were silently failing the whole settings save. The settings page also gains the 88 on/off defaults it was missing, so an administrator can set them for new users instead of leaving each person to find them. The web bundle brings the first-run setup wizard, OLED Mode, the Aya media bar, spoiler-free options, a Live TV favourites row, Quick Return on the browse screens, crash reports that go to your own server rather than a third party, and vim keys in the player.",
         "targetAbi": "12.0.0.0",
