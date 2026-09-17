@@ -10,7 +10,7 @@
     "versions": [
       {
         "version": "2.0.8.3",
-        "changelog": "Automated build from Devils-XDK/xdk-flix-plugin@704f69a530f9884c5d8aed14abe3cce87635eec4",
+        "changelog": "Two fixes for things that could not be reached at all. An administrator's \"Show the messages button by default\" never applied to anyone: switching it on stored a value, and a stored value was also how a client decided the user had chosen for themselves, so the first time any client asked this server it wrote the default down and treated it as the user's own answer from then on. Where the value came from is tracked separately now, so ticking that box reaches everyone who has not set it themselves -- including everyone who was locked out by the old behaviour. And in the web app on a phone there was no fullscreen button below 600px wide and nothing that could leave portrait, because the orientation call the player makes does nothing in a browser; the button is there now and going fullscreen asks the browser to hold the phone in landscape.",
         "targetAbi": "12.0.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.0.8.3.zip",
         "checksum": "A9F5F6F7AEF349EB53C78AFEC509C31E",
