@@ -1,16 +1,16 @@
 {
-  "tag_name": "v2.4.11",
-  "name": "XDKNet 2.4.11",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.4.11",
+  "tag_name": "v2.4.12",
+  "name": "XDKNet 2.4.12",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.4.12",
   "channel": "android_tv_apk",
-  "body": "Android TV 2.4.11, alongside XDKNet server plugin 2.0.9.1 (Emby 2.0.4.1).\n\nThis release is about speed. Nothing looks different; it just gets there\nsooner and moves more smoothly, especially on Chromecast with Google TV and\nother lighter Google TV boxes.\n\nTVs on 2.4.10 offer this update on their own. On 2.4.9, use Settings > About >\nCheck for updates. Anything older has to install it once by hand, from the\n`XDKNet_AndroidTV.apk` below.\n\n## Smoother scrolling\n\n**Library grids and home rows keep up with the remote.** Moving focus used to\nredraw every card on screen, many times a second while a direction was held.\nOnly the cards that change are redrawn now.\n\n**Home rows stay put when more items load.** The focused card's title no\nlonger starts scrolling over again when the next page arrives.\n\n**Long titles scroll without redrawing the whole screen**, and the background\nblur is no longer worked out again at the end of every fade.\n\n## Faster loading\n\n- Backdrops and library posters are downloaded at the size they are shown\n  rather than two to four times larger. The posters you are looking at load\n  before the ones you have scrolled past.\n- Opening a movie or series no longer looks through every collection one at a\n  time to find the ones it belongs to.\n- Continue watching starts loading first, the banner's libraries load\n  together, and Seerr and IMDb rows no longer hold up your server's rows.\n- The app asks the server for your account and libraries once at startup\n  instead of several times, and the codec check no longer holds up the launch.\n\n## Faster playback start\n\n- A movie with a separate subtitle file no longer loads its stream twice\n  before it starts.\n- With theme music on, the fade-out now happens while the movie loads rather\n  than before it.\n- The player no longer reads about 20 MB of fonts every time it opens.\n- Episodes fetch the one you picked and the next one at the same time.\n\nEmby users: images are downloaded once more after this update, then kept\nacross sign-ins.\n\nPair with plugin 2.0.9.1.",
+  "body": "Android TV 2.4.12, alongside XDKNet server plugin 2.0.9.1 (Emby 2.0.4.1).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## New: System Monitor\n\n**Settings > About > System Monitor** shows how the TV and the app are doing,\nupdated every two seconds while it is open:\n\n- **Memory:** how much of the TV's RAM is in use, how close it is to the point\n  where Android starts closing apps, and how much XDKNet itself is using,\n  split into graphics, native, Java and code, plus the image cache.\n- **CPU:** how much of the processor XDKNet is using, and each core's current\n  clock speed.\n- **Temperature:** whether the TV is running hot enough to slow itself down.\n- **Storage:** free space and the size of the app's cache.\n- **System:** the device and chip, Android version, whether XDKNet is running\n  as a 32- or 64-bit app, the display and uptime.\n\n**Frame graphs:** a switch at the bottom draws how long each frame takes over\nevery screen, so you can see dropped frames while you scroll. It stays on\nuntil you turn it off or restart the app.\n\nPair with plugin 2.0.9.1.",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v2.4.11.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.4.11/XDKNet_AndroidTV_v2.4.11.apk",
-      "size": 90730543,
-      "sha256": "e6d249d11ef3fea698811b23ec3c20305db4b9ad2cd6e4bceccc7e3727d878f7"
+      "name": "XDKNet_AndroidTV_v2.4.12.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.4.12/XDKNet_AndroidTV_v2.4.12.apk",
+      "size": 90773559,
+      "sha256": "c85d825e7d2107ac8e9a62a87e3ba0ca00cc7b00924683eb428920449403fc81"
     }
   ],
-  "version_code": 2000029
+  "version_code": 2000030
 }
