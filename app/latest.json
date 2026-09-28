@@ -1,11 +1,16 @@
 {
-  "tag_name": "v2.4.9",
-  "name": "XDKNet 2.4.9",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.4.9",
+  "tag_name": "v2.4.10",
+  "name": "XDKNet 2.4.10",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.4.10",
+  "channel": "android_tv_apk",
+  "body": "Android TV 2.4.10, alongside XDKNet server plugin 2.0.9.0 (Emby 2.0.4.0).\n\n**On 2.4.9, update from Settings > About > Check for updates, then Download.**\nOn its own, 2.4.9 only shows a short notice that the remote cannot select.\nAnything older than 2.4.9 has to install this once by hand, from the\n`XDKNet_AndroidTV.apk` below. From 2.4.10 on, the TV asks by itself.\n\n## Updates\n\n**The TV asks about a new version with a dialog you can use with the remote.**\nIt shows the release notes, with \"Update now\" focused and \"Later\" next to it.\nBefore, the only prompt was a pill that could not take focus and disappeared\nafter a few seconds. If you choose \"Later\", Settings > About still shows that\nan update is waiting.\n\n**A download is checked before it is installed.** Its size and SHA-256 must\nmatch the release, so a cut-off or wrong file is never installed. The update\ndialog now always has a button to press and Back works throughout. It says\nwhat went wrong when Android refuses the install (cancelled, not enough\nspace, signed differently) instead of sitting at 100% until the app is\nforce-stopped.\n\n**Phone and desktop builds no longer offer the TV build as their update.**\n\n## Fixed, on Android TV\n\n**Back works as it should on Chromecast with Google TV, Google TV Streamer and\nother Android 13+ TVs.** It collapses an expanded overview and jumps back to\nthe All chip in grids again, as it does on the Shield.\n\n**No notification permission prompt over the login screen on Google TV.** TVs\nnever ask for it now.\n\n**Titles you remove from Continue watching stay removed** until you play them\nagain or the next episode changes.\n\n**The hourly Continue watching refresh no longer starts a hidden copy of the\napp.** That copy could leave HDR, codec and audio passthrough detection\nmissing the next time the app opened. The refresh also pauses while the app\nis open or anything is playing.\n\n**The TV can go to sleep.** The screensaver has a new \"Turn Screen Off After\"\nsetting, 30 minutes by default. After that the TV's own ambient mode or\ndisplay-off timer takes over instead of the artwork staying lit all night.\n\n**Guide and Last/Recall buttons work in Live TV.** Guide opens the channel\nguide, and Last goes back to the previous channel.\n\n**Casting to DLNA:** titles with \"&\" in them play on strict renderers. A bad\nrequest from another device on the network can no longer crash the app\nmid-cast.\n\n## Fixed, on TV and in the web app\n\n**Blocked parental ratings are hidden everywhere.** This covers library grids,\nsearch, the media bar, collections, genre and person pages, Favorites,\nShuffle, Next Up and Continue watching (using the show's rating), and Seerr\nand IMDb list rows. Before, only the Home rows were filtered.\n\n**Thumb and Banner library views sync between devices on Jellyfin again.**\n\n## Security\n\n- Artwork shared with the launcher, Android Auto and media controls no longer\n  carries your server sign-in.\n- Only trusted apps (system UI, Bluetooth, Assistant, launchers) can control\n  or read the video player's media session. Only the app itself can use the\n  picture-in-picture play/pause button.\n- Books cannot run scripts in the reader.\n- Emulator cores are downloaded only from libretro over verified HTTPS, and\n  checked before they are loaded.\n- Plugin settings only give your admin sign-in to your server's own pages.\n\nPair with plugin 2.0.9.0.",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v2.4.9.apk",
-      "browser_download_url": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/app/xdknet-tv.apk"
+      "name": "XDKNet_AndroidTV_v2.4.10.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.4.10/XDKNet_AndroidTV_v2.4.10.apk",
+      "size": 90653043,
+      "sha256": "bbce239888eb98d2207d57e23d52c28227fdf6248535fb301e03b20432ca2739"
     }
-  ]
+  ],
+  "version_code": 2000028
 }
