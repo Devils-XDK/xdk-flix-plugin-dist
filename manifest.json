@@ -13,8 +13,8 @@
         "changelog": "Automated build from Devils-XDK/xdk-flix-plugin@15564cecde67f04290f647de402534d962975f75",
         "targetAbi": "12.0.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/releases/XDKNet.Server-2.1.0.0.zip",
-        "checksum": "71CD688648425317325683D2BBFF1356",
-        "timestamp": "2026-09-30T16:31:01Z"
+        "checksum": "8FA45620E661FBD6D9BEA9407130D1A4",
+        "timestamp": "2026-09-30T16:33:29Z"
       },
       {
         "version": "2.0.9.3",
