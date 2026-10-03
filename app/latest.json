@@ -1,16 +1,16 @@
 {
-  "tag_name": "v2.5.1",
-  "name": "XDKNet 2.5.1",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.1",
+  "tag_name": "v2.5.2",
+  "name": "XDKNet 2.5.2",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.2",
   "channel": "android_tv_apk",
-  "body": "Android TV 2.5.1, alongside XDKNet server plugin 2.1.0.1 (Emby 2.0.5.1).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## Report a problem from a title's page\n\nA movie, show, season or episode in your library now has a **Report issue**\nbutton on its page, next to Watchlist, Download and the other actions (under\nMore on narrow screens). It sends the problem to Seerr, the same as the\nreport on Seerr's own title page: pick video, audio, subtitles or something\nelse, and add a note. Reporting from an episode or a season starts on that\nseason and episode.\n\nThe button shows when Seerr is set up, the title is in Seerr as available,\nand your Seerr account may create issues. It can be hidden or moved like the\nother buttons under Details screen > Action Buttons.\n\nThe web app gets the same button with plugin 2.1.0.1 (Emby 2.0.5.1), which\ncarries the updated web client.\n\nPair with plugin 2.1.0.1 (Emby 2.0.5.1).",
+  "body": "Android TV 2.5.2, alongside XDKNet server plugin 2.1.0.2 (Emby 2.0.5.2).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## Leaving the player in the Jellyfin iOS app\n\nIn the web app inside the Jellyfin iOS app, the back button did nothing once\na movie or episode had started, so there was no way out of the player. It now\ncloses the player straight away. Live TV had the same problem and is fixed\ntoo.\n\nLeaving the player also no longer waits on the device for more than a couple\nof seconds, on any platform, so a TV, phone or browser that is slow to put\nthe screen back can't keep you in the player.\n\nThe web app gets the fix with plugin 2.1.0.2 (Emby 2.0.5.2), which carries\nthe updated web client.\n\nPair with plugin 2.1.0.2 (Emby 2.0.5.2).",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v2.5.1.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.1/XDKNet_AndroidTV_v2.5.1.apk",
-      "size": 92434001,
-      "sha256": "e839dc7fd8ebe9cbcd190b2a085500e0e877e42f31a9901e552b85875e1573d9"
+      "name": "XDKNet_AndroidTV_v2.5.2.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.2/XDKNet_AndroidTV_v2.5.2.apk",
+      "size": 92432181,
+      "sha256": "7fdb751763833eb771bf32d10e04db4039a9895a40cd28123bc6cda38d14fa3c"
     }
   ],
-  "version_code": 2000034
+  "version_code": 2000035
 }
