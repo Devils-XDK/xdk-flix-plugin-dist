@@ -1,16 +1,16 @@
 {
-  "tag_name": "v2.5.3",
-  "name": "XDKNet 2.5.3",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.3",
+  "tag_name": "v2.5.4",
+  "name": "XDKNet 2.5.4",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.4",
   "channel": "android_tv_apk",
-  "body": "Android TV 2.5.3, alongside XDKNet server plugin 2.1.0.3 (Emby 2.0.5.3).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## A new look\n\nXDKNet has a new logo. It shows on the app icon, the Android TV home screen\nbanner and the logo inside the app.\n\n## You can see where the remote is\n\n- **Notifications settings** now highlight the switch the remote is on, the\n  same as every other settings row. Before, nothing lit up, so there was no\n  telling which one you were about to change.\n- **The update prompt** now shows its focused button as a solid bar. It was\n  only a faint tint before, which on the dark dialog looked like nothing was\n  selected.\n- **PIN code settings** had the same missing highlight and are fixed too.\n\n## A shorter About page\n\nSettings > About no longer lists Source code, Report an issue, Join Discord\nor Licenses.\n\nThe web app gets the new logo and the shorter About page with plugin 2.1.0.3\n(Emby 2.0.5.3).\n\nPair with plugin 2.1.0.3 (Emby 2.0.5.3).",
+  "body": "Android TV 2.5.4, alongside XDKNet server plugin 2.1.0.4 (Emby 2.0.5.4).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## Why a video is transcoding\n\nThe player's stream info and a title's \"Direct play: No\" list now say why\nthe server is converting a video. On Jellyfin these were always empty,\nbecause the reasons were read from a place the server never fills. Every\nreason Jellyfin and Emby send now has a plain one-line description.\n\n## Safer Seerr setup\n\nThe app no longer downloads your Radarr and Sonarr API keys from Seerr. It\nonly needed to know whether those servers exist, and now asks Seerr in a way\nthat returns no keys. The plugin also hides API keys and other secrets in\nSeerr settings it passes along.\n\n## Server administration (web app)\n\n- **Sessions** counts what is playing, not every connected app, and says how\n  many are transcoding and how many are idle. It updates on its own every\n  15 seconds.\n- **Errors and Warnings** cover the last 24 hours instead of the last 10 log\n  lines, and open the Activity page.\n- **Disk** now includes your media drives and says how much space is free.\n- **Needs Attention** names the plugins with updates and the tasks that\n  failed, shows broken plugins and a pending server restart, colours an\n  available update as information rather than an error, and no longer\n  disappears when one server check fails. Updates that need a newer server\n  are no longer offered there or on the Plugins page.\n- **Remux, audio converted or transcoding:** sessions, Now Streaming and the\n  watch history now tell these apart. A remux only repackages the file, so\n  it no longer counts as a transcode.\n- **Session details** show the real hardware encoder, and the button that\n  only sent the viewer to their home screen now says so.\n- **Alerts:** \"Failed tasks\" and \"Server errors\" now actually arrive. The\n  \"Transcode throttling\" switch is gone, because nothing could detect it.\n\nThe web app gets these with plugin 2.1.0.4 (Emby 2.0.5.4), which carries the\nupdated web client.\n\nPair with plugin 2.1.0.4 (Emby 2.0.5.4).",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v2.5.3.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.3/XDKNet_AndroidTV_v2.5.3.apk",
-      "size": 93933933,
-      "sha256": "7eb0114fb9e9ac209290edc915e5341d2f71bb32e904043150e8fd282bba9fd0"
+      "name": "XDKNet_AndroidTV_v2.5.4.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.4/XDKNet_AndroidTV_v2.5.4.apk",
+      "size": 93964629,
+      "sha256": "11f08e62922a02f28ef60af6593dff348bff5060959937b4a90e6634b747210b"
     }
   ],
-  "version_code": 2000036
+  "version_code": 2000037
 }
