@@ -1,16 +1,16 @@
 {
-  "tag_name": "v2.5.8",
-  "name": "XDKNet 2.5.8",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.8",
+  "tag_name": "v2.5.9",
+  "name": "XDKNet 2.5.9",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.9",
   "channel": "android_tv_apk",
-  "body": "Android TV 2.5.8. No server plugin update this time: it works with plugin\n2.1.0.7 (Emby 2.0.5.7).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## Back where you were after turning the TV off\n\nTurning the TV off during an episode or film and coming back to the app\nstarted it again from the beginning, with a \"Skip Recap\" or \"Skip Intro\"\nprompt on screen, while backing out and pressing Play again resumed in the\nright place.\n\n- The app now picks up at the spot you were at when the TV went off.\n- Skip prompts and Next up wait until the video is open at its resume point,\n  so they no longer appear for a moment at the start of a resume.\n\nUse with plugin 2.1.0.7 (Emby 2.0.5.7).",
+  "body": "Android TV 2.5.9, alongside XDKNet server plugin 2.1.0.8 (Emby 2.0.5.8).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## New\n\n- **Where to watch.** A title you don't have yet shows which streaming\n  services carry it, grouped as Stream, Free, Rent and Buy, on its Seerr\n  page and in search. A title you do have shows an \"Also on\" line with the\n  services it's on. The region follows your device; change it or switch\n  this off under Details screen settings. Needs a TMDB key in the plugin's\n  settings (TMDB Integration), the same one episode ratings use.\n- **Your year in review.** Every viewer gets their own year: hours watched,\n  top shows and films, top genres, biggest day, longest streak and more,\n  as a set of cards you move through with Left and Right. It's under your\n  profile menu any time, and a card on Home offers it in December and\n  January. It only ever shows your own watching. The plugin now keeps\n  every play for this, so this year is covered from when the plugin\n  started keeping track.\n- **Music without gaps, at an even volume.** Albums now play from one track\n  into the next with no pause, and quiet and loud songs play at a similar\n  level, using the loudness Jellyfin measures. **Crossfade** is new and off\n  by default: switch it on in the music player's menu or under Settings >\n  Playback > Audio. It never fades between tracks of an album played in\n  order.\n- **Smart lists**, off by default. Switch them on under Settings >\n  Libraries > Smart lists. Then any library view with filters or a sort can\n  be saved as a list that keeps itself up to date, such as \"Unwatched · 4K\n  · 1990s\", and shown as a row on Home if you want. Lists are under\n  Favorites > Smart lists and follow you to every device.\n\n## For server owners\n\n- For even volume on Jellyfin, turn on the LUFS scan in the music library's\n  options and let the Audio Normalization task run.\n- For where to watch, fill in the TMDB key under Plugins > XDKNet > TMDB\n  Integration if it isn't already.\n\nPair with plugin 2.1.0.8 (Emby 2.0.5.8).",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v2.5.8.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.8/XDKNet_AndroidTV_v2.5.8.apk",
-      "size": 94618173,
-      "sha256": "282abcfdf79b66499a5890a08663259de38fd8b196fe1772019b3b1cdef3bd6e"
+      "name": "XDKNet_AndroidTV_v2.5.9.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.9/XDKNet_AndroidTV_v2.5.9.apk",
+      "size": 94968553,
+      "sha256": "e3d8afe5f8bf36ec2d96bb5828d9fcf3d6c16e2ae18e2f502a9c53c7b79e7a5a"
     }
   ],
-  "version_code": 2000041
+  "version_code": 2000042
 }
