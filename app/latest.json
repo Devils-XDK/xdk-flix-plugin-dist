@@ -1,16 +1,16 @@
 {
-  "tag_name": "v2.5.10",
-  "name": "XDKNet 2.5.10",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.10",
+  "tag_name": "v2.5.11",
+  "name": "XDKNet 2.5.11",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.11",
   "channel": "android_tv_apk",
-  "body": "Android TV 2.5.10, alongside XDKNet server plugin 2.1.0.9 (Emby 2.0.5.9).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## For everyone\n\n- **Where to watch on the Classic title page.** The \"Also on\" line with the\n  streaming services a title is on now shows on the Classic page too, under\n  the ratings. On a TV, press Up from Play to reach it.\n\n## For admins: Radarr and Sonarr (Jellyfin)\n\n- **Clear failed imports.** Downloads that finished but couldn't be imported\n  keep using space in the download client. The Requests page now shows how\n  many there are and how much space they use, and removes them with their\n  files from the download client, blocklists the release and searches\n  again, one at a time or all at once.\n- **Clear them automatically**, off by default: under the Requests page's\n  Automatic clean-up, or Plugins > XDKNet > Radarr and Sonarr > Failed\n  imports. Failed downloads are cleared after 24 hours (you can change it)\n  and searched for again.\n- **Replace a file.** A title page's Admin controls now offer **Replace\n  file** when Radarr or Sonarr has the title on disk: pick the file or\n  episodes, confirm with the size shown, and then search again or pick a\n  release yourself. The same is in the Requests page's title details under\n  Files on disk.\n- **Act on many requests at once.** Select titles on the Requests page (on a\n  TV, press Select first), or \"Select all that need attention\", then search\n  them all, remove their failed downloads, or go through interactive search\n  for each one in turn with Skip and Next.\n\nEvery removal and deletion asks first, shows the size, and is written to\nthe XDKNet plugin log with who did it.\n\nPair with plugin 2.1.0.9 (Emby 2.0.5.9).",
+  "body": "Android TV 2.5.11, alongside XDKNet server plugin 2.1.0.10 (Emby 2.0.5.10).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\nThis release is for admins. Nothing changes for other viewers.\n\n## For admins: Radarr and Sonarr (Jellyfin)\n\n- **Search what Radarr and Sonarr hold.** The Requests page has new Search\n  and Missing views next to Requests. Search finds films and series by\n  title, ignoring case, accents and a leading \"The\". Open a series to see\n  its seasons and missing episodes, then search for an episode or a whole\n  season, or pick a release yourself with interactive search.\n- **See everything that's missing.** Missing lists the films and episodes\n  Radarr and Sonarr are still waiting for, with episodes gathered under\n  their series. Filter by films or series, monitored and aired, then pick\n  titles to search for them together or go through interactive search one\n  by one.\n- **Search your requests.** A search box on the Requests page matches the\n  title, year, who asked, and what needs attention, such as \"stuck\" or\n  \"not monitored\".\n- **Pick several downloads in the queue.** Tick downloads, or press Select\n  on a TV, then remove the failed ones or take any download out of the\n  queue. \"Select all failed\" picks every failed download the current filter\n  shows. Filters cover failed imports, downloading and stalled, a show with\n  several downloads is grouped under one heading, and common Radarr and\n  Sonarr warnings get a short explanation in plain English.\n- **Choose whether clean-up blocklists.** The automatic clean-up of failed\n  downloads now has a \"Blocklist the release\" switch, on by default. Turn it\n  off to remove failed downloads without stopping Radarr or Sonarr from\n  grabbing the same release again.\n- **Scroll bars on admin pages.** With a mouse, on the web or a computer,\n  long admin pages such as the download queue now show a scroll bar.\n\nEvery removal asks first, shows the size, and is written to the XDKNet\nplugin log with who did it.\n\nPair with plugin 2.1.0.10 (Emby 2.0.5.10).",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v2.5.10.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.10/XDKNet_AndroidTV_v2.5.10.apk",
-      "size": 95104365,
-      "sha256": "ceab1c3a6485f723cfd05c069e408c239e3759cbd5391b270c208dd7c07a83ac"
+      "name": "XDKNet_AndroidTV_v2.5.11.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.11/XDKNet_AndroidTV_v2.5.11.apk",
+      "size": 95248329,
+      "sha256": "b5e328c930737587454050aca29f04c799626a3a63d34a8a0cacb686bf48c11f"
     }
   ],
-  "version_code": 2000043
+  "version_code": 2000044
 }
