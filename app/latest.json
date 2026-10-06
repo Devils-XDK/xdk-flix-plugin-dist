@@ -1,16 +1,16 @@
 {
-  "tag_name": "v2.5.9",
-  "name": "XDKNet 2.5.9",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.9",
+  "tag_name": "v2.5.10",
+  "name": "XDKNet 2.5.10",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.10",
   "channel": "android_tv_apk",
-  "body": "Android TV 2.5.9, alongside XDKNet server plugin 2.1.0.8 (Emby 2.0.5.8).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## New\n\n- **Where to watch.** A title you don't have yet shows which streaming\n  services carry it, grouped as Stream, Free, Rent and Buy, on its Seerr\n  page and in search. A title you do have shows an \"Also on\" line with the\n  services it's on. The region follows your device; change it or switch\n  this off under Details screen settings. Needs a TMDB key in the plugin's\n  settings (TMDB Integration), the same one episode ratings use.\n- **Your year in review.** Every viewer gets their own year: hours watched,\n  top shows and films, top genres, biggest day, longest streak and more,\n  as a set of cards you move through with Left and Right. It's under your\n  profile menu any time, and a card on Home offers it in December and\n  January. It only ever shows your own watching. The plugin now keeps\n  every play for this, so this year is covered from when the plugin\n  started keeping track.\n- **Music without gaps, at an even volume.** Albums now play from one track\n  into the next with no pause, and quiet and loud songs play at a similar\n  level, using the loudness Jellyfin measures. **Crossfade** is new and off\n  by default: switch it on in the music player's menu or under Settings >\n  Playback > Audio. It never fades between tracks of an album played in\n  order.\n- **Smart lists**, off by default. Switch them on under Settings >\n  Libraries > Smart lists. Then any library view with filters or a sort can\n  be saved as a list that keeps itself up to date, such as \"Unwatched · 4K\n  · 1990s\", and shown as a row on Home if you want. Lists are under\n  Favorites > Smart lists and follow you to every device.\n\n## For server owners\n\n- For even volume on Jellyfin, turn on the LUFS scan in the music library's\n  options and let the Audio Normalization task run.\n- For where to watch, fill in the TMDB key under Plugins > XDKNet > TMDB\n  Integration if it isn't already.\n\nPair with plugin 2.1.0.8 (Emby 2.0.5.8).",
+  "body": "Android TV 2.5.10, alongside XDKNet server plugin 2.1.0.9 (Emby 2.0.5.9).\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## For everyone\n\n- **Where to watch on the Classic title page.** The \"Also on\" line with the\n  streaming services a title is on now shows on the Classic page too, under\n  the ratings. On a TV, press Up from Play to reach it.\n\n## For admins: Radarr and Sonarr (Jellyfin)\n\n- **Clear failed imports.** Downloads that finished but couldn't be imported\n  keep using space in the download client. The Requests page now shows how\n  many there are and how much space they use, and removes them with their\n  files from the download client, blocklists the release and searches\n  again, one at a time or all at once.\n- **Clear them automatically**, off by default: under the Requests page's\n  Automatic clean-up, or Plugins > XDKNet > Radarr and Sonarr > Failed\n  imports. Failed downloads are cleared after 24 hours (you can change it)\n  and searched for again.\n- **Replace a file.** A title page's Admin controls now offer **Replace\n  file** when Radarr or Sonarr has the title on disk: pick the file or\n  episodes, confirm with the size shown, and then search again or pick a\n  release yourself. The same is in the Requests page's title details under\n  Files on disk.\n- **Act on many requests at once.** Select titles on the Requests page (on a\n  TV, press Select first), or \"Select all that need attention\", then search\n  them all, remove their failed downloads, or go through interactive search\n  for each one in turn with Skip and Next.\n\nEvery removal and deletion asks first, shows the size, and is written to\nthe XDKNet plugin log with who did it.\n\nPair with plugin 2.1.0.9 (Emby 2.0.5.9).",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v2.5.9.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.9/XDKNet_AndroidTV_v2.5.9.apk",
-      "size": 94968553,
-      "sha256": "e3d8afe5f8bf36ec2d96bb5828d9fcf3d6c16e2ae18e2f502a9c53c7b79e7a5a"
+      "name": "XDKNet_AndroidTV_v2.5.10.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.10/XDKNet_AndroidTV_v2.5.10.apk",
+      "size": 95104365,
+      "sha256": "ceab1c3a6485f723cfd05c069e408c239e3759cbd5391b270c208dd7c07a83ac"
     }
   ],
-  "version_code": 2000042
+  "version_code": 2000043
 }
