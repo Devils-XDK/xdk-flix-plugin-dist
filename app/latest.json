@@ -1,16 +1,16 @@
 {
-  "tag_name": "v2.5.17",
-  "name": "XDKNet 2.5.17",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.17",
+  "tag_name": "v2.5.18",
+  "name": "XDKNet 2.5.18",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v2.5.18",
   "channel": "android_tv_apk",
-  "body": "Android TV 2.5.17, alongside XDKNet server plugin 2.1.0.16 (Emby 2.0.5.16).\nUpdate the plugin too: the Calendar fix is in the plugin. Without it the\nUpcoming rows and the Calendar stay empty where they were empty before; this\nTV release only explains why.\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\nThis release is for everyone. Fixing what the Calendar reports may need the\nserver's admin.\n\n## Calendar and Upcoming rows\n\n- The Upcoming rows and the Calendar now read Radarr and Sonarr from the\n  servers set up in the XDKNet plugin settings, at the address set there and\n  with Seerr's API key when one is saved. Before, they used only the address\n  Seerr keeps and an admin's Seerr sign-in, so a Radarr that Seerr knows by a\n  Docker name, or a sign-in that had expired, left them empty with no word\n  of why.\n- When the Calendar can't load, it now says why. An admin is told what to\n  fix, for example that a host name doesn't resolve from the server or that\n  no Seerr admin has signed in, and the plugin log keeps it too. Everyone else\n  is told the server couldn't read it.\n- Include unmonitored, in Calendar Settings, now brings in what Radarr and\n  Sonarr aren't monitoring.\n\n## For the server's admin\n\n- If the Calendar says the server can't reach Radarr or Sonarr, open\n  Dashboard > Plugins > XDKNet > Radarr and Sonarr, see which server doesn't\n  answer, and enter the address the Jellyfin server should use for it.\n- Save Seerr's API key (in Seerr under Settings > General) in the plugin\n  settings, so the calendar doesn't depend on an admin's Seerr sign-in, which\n  expires.\n- On Emby the calendar works as it did.",
+  "body": "Android TV 2.5.18. No server plugin update is needed: XDKNet plugin\n2.1.0.16 (Emby 2.0.5.16) stays current.\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the `XDKNet_AndroidTV.apk` below.\n\n## Playback\n\n- A show or film whose stream stops loading part way through now reopens\n  where it stopped, instead of ending with \"The stream stopped loading\". If\n  it stalls again straight away, it reopens converted by the server, which\n  gets past a file the TV's player keeps getting stuck on.\n\n## Find intros (Jellyfin, for the server's admin)\n\n- A series, season or episode page has a new **Find intros** in its Admin\n  controls, when the server runs the Intro Skipper plugin. It has Intro\n  Skipper look again for intros, recaps and credits: in every season from a\n  series page, or in one season from a season or episode page. The window\n  shows each season as it is scanned, then how many episodes got an intro\n  and a recap. Segments changed by hand are kept. It can be closed at any\n  time; Intro Skipper carries on with the scan on the server.\n- **Look for recaps in subtitles**, on by default, turns on Intro Skipper's\n  subtitle recap search for the seasons scanned. The audio match that finds\n  intros rarely finds a recap, since a recap is different in every episode.\n  The subtitle search finds one that opens with \"Previously on…\" in a text\n  subtitle (SRT or similar), embedded or beside the file.\n- A show without text subtitles needs **Detect recaps using black frames**\n  turned on in Intro Skipper's settings on the server; the window says so\n  when a scan found no recaps.\n- Recaps from subtitles need Intro Skipper 12 or later. Older Intro Skipper\n  still scans, one season at a time, and finds intros as before.\n- Skipping uses what was found from the next episode played. How intros and\n  recaps are skipped is set in Settings > Playback & SyncPlay > Automation &\n  Queue > Skip Segments.",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v2.5.17.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.17/XDKNet_AndroidTV_v2.5.17.apk",
-      "size": 96974620,
-      "sha256": "3e8889240f6b61cdf941a34db362001017d0b89359ce6e21c8ef3891025d75d8"
+      "name": "XDKNet_AndroidTV_v2.5.18.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v2.5.18/XDKNet_AndroidTV_v2.5.18.apk",
+      "size": 97024892,
+      "sha256": "602b43791ab2961af2961d151906d656df05370b186cb85e906078253a8fbf1c"
     }
   ],
-  "version_code": 2000050
+  "version_code": 2000051
 }
