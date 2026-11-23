@@ -9,6 +9,14 @@
     "imageUrl": "https://raw.githubusercontent.com/Devils-XDK/xdk-flix-plugin-dist/main/logo.png",
     "versions": [
       {
+        "version": "3.0.1.1",
+        "changelog": "XDKNet 3.0.1.1, released with the Android TV app: https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.1.1",
+        "targetAbi": "12.0.0.0",
+        "sourceUrl": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v3.0.1.1/XDKNet.Server-3.0.1.1.zip",
+        "checksum": "402BAABC294F87582D2ACFBF160DAD24",
+        "timestamp": "2026-11-23T12:41:22Z"
+      },
+      {
         "version": "3.0.1.0",
         "changelog": "XDKNet 3.0.1.0, released with the Android TV app: https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.1.0",
         "targetAbi": "12.0.0.0",
