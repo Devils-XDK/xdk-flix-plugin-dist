@@ -1,16 +1,16 @@
 {
-  "tag_name": "v3.0.3.0",
-  "name": "XDKNet 3.0.3.0",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.3.0",
+  "tag_name": "v3.0.3.1",
+  "name": "XDKNet 3.0.3.1",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.3.1",
   "channel": "android_tv_apk",
-  "body": "XDKNet 3.0.3.0 makes inviting people easier. Update the server plugin to\n3.0.3.0 along with the app.\n\n## The sign-up page\n\n- The invite sign-up page now looks like XDKNet, with its logo and colours,\n  on phones and computers.\n- How to watch guides: write short guides for each kind of device under\n  Wizarr in the XDKNet settings. They start with iPhone and iPad, Android TV,\n  Google TV Streamer and Fire TV (Downloader by AFTVnews, code 2332151) and a\n  web browser (Firefox or Chrome); show, hide, reorder, edit or add your own.\n  People see them on the sign-up page and right after signing up.\n\n## Invites in the app\n\n- Invite links can end after 1, 6 or 12 hours, or any number of hours, as\n  well as after days. XDKNet ends them on time and removes them from Wizarr.\n- Each invite shows its activity: when it was opened or used, from which IP\n  address and device, what happened, and who signed up. Kept for 30 days\n  unless you choose otherwise.\n- Sharing an invite can include your setup guides, so one message has the\n  link, your server address and how to get started.\n- Invite lists say when a link ends or ended, such as \"Link ends in 52 min\".\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the Android TV APK below.",
+  "body": "XDKNet 3.0.3.1 is a small fix to 3.0.3.0. Update the server plugin to\n3.0.3.1 along with the app.\n\n## Fixed\n\n- How to watch guides read the same on the sign-up page as in the editor's\n  preview: code or bold text of exactly 500 characters, and a link of\n  exactly 2100, were formatted in the preview but shown as plain text on\n  the page.\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the Android TV APK below.",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v3.0.3.0.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v3.0.3.0/XDKNet_AndroidTV_v3.0.3.0.apk",
+      "name": "XDKNet_AndroidTV_v3.0.3.1.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v3.0.3.1/XDKNet_AndroidTV_v3.0.3.1.apk",
       "size": 101095931,
-      "sha256": "b5f1abb55c9d387d65aa934b5206ffd142d8e7bd04be60923459352d9ec253ba"
+      "sha256": "036ef9dfe67224bdcf1a8f76b80da7673ec549f78db824354b692024266b9402"
     }
   ],
-  "version_code": 2000063
+  "version_code": 2000064
 }
