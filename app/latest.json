@@ -1,16 +1,16 @@
 {
-  "tag_name": "v3.0.1.1",
-  "name": "XDKNet 3.0.1.1",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.1.1",
+  "tag_name": "v3.0.1.2",
+  "name": "XDKNet 3.0.1.2",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.1.2",
   "channel": "android_tv_apk",
-  "body": "XDKNet 3.0.1.1 is a small update to 3.0.1.0, which brought in Moonfin 3.1.1.\nUpdate the server plugin to 3.0.1.1 along with the app.\n\n## Smart Search\n\n- While the server is still downloading Smart Search's model or indexing the\n  library for the first time, search no longer shows a Smart Search row of\n  rough guesses. The usual results show on their own, and the row comes back\n  once the index is ready.\n\n## Home and Settings\n\n- The Settings preview draws Modern posters at the size Home does, at every\n  card size.\n- On a phone, tapping a Modern card moves the rows under it down to make room\n  for its details, instead of covering them.\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the Android TV APK below.",
+  "body": "XDKNet 3.0.1.2 brings invite sign-up onto your own server and fixes Seerr's\nwebhook setup. Update the server plugin to 3.0.1.2 along with the app.\n\n## Invites without a public Wizarr\n\n- Invite links can now open a sign-up page on your Jellyfin server, at\n  /XDKNet/Join/<code>. XDKNet signs the person up through Wizarr behind the\n  scenes, so Wizarr can stay on your local network. It is off until you turn\n  it on: under Wizarr in the plugin settings, set where invite links open to\n  \"This server\". It needs the Public Server URL to be set.\n- The page is locked down: it only works while links point to this server,\n  limits how often anyone can try, refuses wrong codes the same way every\n  time, lets a one-time invite make only one account, and never shows\n  Wizarr's address. Wizarr's steps before sign-up are kept unless you choose\n  to skip them.\n- When making an invite you can now give Live TV and downloads as well as\n  choosing libraries, and the invite list says what each invite gives.\n\n## Settings and fixes\n\n- The Seerr webhook is set up with your Seerr API key, so it no longer waits\n  for a Seerr admin to sign in, and its status says what is wrong in words.\n- A Public Server URL copied from the web app's address bar is kept as the\n  server's address.\n- A web address saved as the Wizarr API key is refused with a clear message,\n  and the key fields aren't filled in by password managers.\n\nIf your server is behind a reverse proxy or tunnel, add its address under\nDashboard > Networking > Known proxies in Jellyfin. Without it the sign-up\npage can't tell visitors apart, so it stays closed and the plugin settings\nsay why.\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the Android TV APK below.",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v3.0.1.1.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v3.0.1.1/XDKNet_AndroidTV_v3.0.1.1.apk",
-      "size": 100436707,
-      "sha256": "caa444d71d17b2a6e99bcb6385043b87eff4580081ddaced3df2c6507eea43b2"
+      "name": "XDKNet_AndroidTV_v3.0.1.2.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v3.0.1.2/XDKNet_AndroidTV_v3.0.1.2.apk",
+      "size": 100474091,
+      "sha256": "0a8629db61a303cf4cef7a2691193898973aee2961b580459f10622c7910d94d"
     }
   ],
-  "version_code": 2000059
+  "version_code": 2000060
 }
