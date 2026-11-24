@@ -1,16 +1,16 @@
 {
-  "tag_name": "v3.0.1.3",
-  "name": "XDKNet 3.0.1.3",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.1.3",
+  "tag_name": "v3.0.2.0",
+  "name": "XDKNet 3.0.2.0",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.2.0",
   "channel": "android_tv_apk",
-  "body": "XDKNet 3.0.1.3 fixes invite links that open on your server. In 3.0.1.2 the\nsign-up page at /XDKNet/Join showed \"Error processing request.\" instead of\nthe form. Update the server plugin to 3.0.1.3; nothing else changes, and\ninvites made before still work.\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the Android TV APK below.",
+  "body": "XDKNet 3.0.2.0 brings every XDKNet server setting into the app's admin area\nand gives the plugin's settings page in Jellyfin and Emby a new look. Update\nthe server plugin to 3.0.2.0 as well; the app finds the new settings once the\nplugin has them.\n\n## Settings in the app\n\n- Admin, System, XDKNet now holds every plugin setting: search them, change\n  them, and save or discard, the same way as other admin pages. It works on\n  TV with the remote, on phones and on the web.\n- Keys are set, replaced or removed but never shown. If someone else changed\n  a setting while you were editing, you choose which value to keep.\n- PINs, Radarr and Sonarr servers, the Home layout, themes, server messages,\n  Watch Party rooms, active downloads, the log, storage and per-person tools\n  all have their own pages there. Game cores can be uploaded from a phone,\n  computer or the browser, with progress.\n- XDKNet's Settings button in the Plugins list opens these instead of the web\n  page; the web page is still a tap away.\n\n## The plugin's settings page\n\n- Jellyfin and Emby show the same settings, grouped, with search, a Save and\n  Discard bar that lists what is unsaved, and a warning before leaving with\n  unsaved changes. \"Save as Default\" is gone.\n- Emby gains the settings it was missing, such as the Public Server URL and\n  the Seerr webhook's status.\n\n## Safer settings\n\n- The MDBList, TMDB and push keys, the Firebase account and the Seerr webhook\n  secret are no longer sent to pages that read the plugin's settings.\n- Saves from different places can no longer overwrite each other.\n- Restoring the settings backup only works when the settings were lost, and\n  keeps your current keys and themes.\n- Pushing or copying defaults keeps each person's own Seerr, TMDB and MDBList\n  keys and what they hid from Continue Watching and Next Up.\n- Busy buttons such as Broadcast and Push to everyone have a short wait\n  between uses.\n\n## Invites\n\n- One visitor can no longer slow sign-up for their whole network, people\n  behind their own office or carrier proxy can sign up, and a connection\n  that changes between opening and sending the form refreshes it instead of\n  failing.\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the Android TV APK below.",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v3.0.1.3.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v3.0.1.3/XDKNet_AndroidTV_v3.0.1.3.apk",
-      "size": 100474091,
-      "sha256": "76b10f69a7c45100bf81035b8d436a1c69c771e9ec9e84b7591f853b39e99981"
+      "name": "XDKNet_AndroidTV_v3.0.2.0.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v3.0.2.0/XDKNet_AndroidTV_v3.0.2.0.apk",
+      "size": 100993031,
+      "sha256": "289310523f0e80b2c056897d1a7f60203f13b9f750c2e645c003769acf7d6239"
     }
   ],
-  "version_code": 2000061
+  "version_code": 2000062
 }
