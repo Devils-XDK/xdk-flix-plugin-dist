@@ -1,16 +1,16 @@
 {
-  "tag_name": "v3.0.3.3",
-  "name": "XDKNet 3.0.3.3",
-  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.3.3",
+  "tag_name": "v3.0.3.4",
+  "name": "XDKNet 3.0.3.4",
+  "html_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/tag/v3.0.3.4",
   "channel": "android_tv_apk",
-  "body": "XDKNet 3.0.3.3 makes skipping through a show or film faster. Update the\nserver plugin to 3.0.3.3 along with the app.\n\n## Faster skipping\n\n- Pressing skip several times in a row moves the time straight away and\n  asks the server once, instead of once for every press. A single press is\n  as quick as before.\n- Skips land within a second of where you asked, on the nearest frame that\n  can be shown straight away, so the picture comes back sooner. Resuming,\n  chapters, skipping intros, SyncPlay and Watch Party stay exact.\n- On a fast, steady connection, playback starts again after half a second\n  of video instead of a whole second.\n- Skipping back a few seconds starts at once on most TVs: the last 15\n  seconds are kept within the same memory as before. Low-memory devices,\n  such as the Fire TV Stick, keep working as they did.\n- Both of the last two can be turned off in Video Playback settings, and\n  Playback Information shows what is in use.\n- Skipping back from picture-in-picture uses your skip-back length.\n\n## Server\n\n- A new Streaming section under XDKNet's admin settings shows how Jellyfin\n  transcodes and offers to put back Jellyfin's own defaults, which convert\n  the whole title ahead and keep it for the viewer, so skips land on what is\n  already converted. It asks first and can be undone.\n- While someone plays a file directly, the plugin reads the next part of it\n  into the server's memory so a skip forward doesn't wait on a slow or\n  sleeping disk. Network and cloud drives are left alone unless you allow\n  them, and it steps back when memory is short.\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the Android TV APK below.",
+  "body": "XDKNet 3.0.3.4 fixes live TV in the web app. Update the server plugin to\n3.0.3.4 along with the app.\n\n## Fixed\n\n- Live channels in the web app no longer keep reconnecting. The web player\n  asked the server to re-encode the picture of most 1080p channels, which a\n  live 60 fps channel can't keep up with. Now the server only repackages the\n  stream and converts the sound when the browser needs it.\n\nTVs on 2.4.10 or later offer this update on their own. On 2.4.9, use\nSettings > About > Check for updates. Anything older has to install it once\nby hand, from the Android TV APK below.",
   "assets": [
     {
-      "name": "XDKNet_AndroidTV_v3.0.3.3.apk",
-      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v3.0.3.3/XDKNet_AndroidTV_v3.0.3.3.apk",
-      "size": 101091223,
-      "sha256": "a629c1d103622d15372fe5ce0388956cbb5993ecf7cdb3200c648b94da6872ac"
+      "name": "XDKNet_AndroidTV_v3.0.3.4.apk",
+      "browser_download_url": "https://github.com/Devils-XDK/xdk-flix-plugin-dist/releases/download/v3.0.3.4/XDKNet_AndroidTV_v3.0.3.4.apk",
+      "size": 101091219,
+      "sha256": "0aae490edfc02413967ffb743014160077a69c9e6363bbb7241fa08d56d9f0e2"
     }
   ],
-  "version_code": 2000066
+  "version_code": 2000067
 }
